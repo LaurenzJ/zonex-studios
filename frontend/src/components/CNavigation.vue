@@ -1,21 +1,26 @@
 <template>
   <div
-    class="text-white top-0 sticky font-h1 py-2 bg-[#370000] bg-opacity-70 backdrop-blur-xl"
+    class="z-10 text-white top-0 sticky font-h1 py-0 bg-[#370000] bg-opacity-70 backdrop-blur-xl"
   >
     <nav
-      class="sticky top-0 container px-6 py-8 mx-auto md:flex md:justify-between md:items-center"
+      class="sticky top-0 container px-6 mx-auto md:flex md:justify-between md:items-center"
     >
       <div class="flex items-center justify-between">
         <router-link
           to="/"
           class="text-xl font-bold text-red-800 md:text-2xl hover:text-blue-400"
         >
-          <img
-            src="@/assets/images/logo.png"
-            alt="SlimeSpy2"
-            class="w-32 md:w-48">
-          <h2 class="tracking-widest">ZONEX</h2>
-          <h4 class="font-medium">Studios</h4>
+          <div class="flex">
+            <img
+              src="@/assets/images/logo.png"
+              alt="SlimeSpy2"
+              class="w-32 md:w-32"
+            />
+            <div class="m-auto">
+              <h2 class="tracking-widest">ZONEX</h2>
+              <h4 class="font-medium">Studios</h4>
+            </div>
+          </div>
         </router-link>
         <!-- Mobile menu button -->
         <div @click="showMenu = !showMenu" class="flex md:hidden">
@@ -36,7 +41,7 @@
       <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
       <ul
         :class="showMenu ? 'flex' : 'hidden'"
-        class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
+        class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 pb-4"
       >
         <router-link to="/" class="nav-link">
           <li>Home</li>

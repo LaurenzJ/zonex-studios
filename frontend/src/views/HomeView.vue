@@ -28,11 +28,11 @@
 
       <div class="lg:flex lg:space-x-6 space-y-16 grid place-items-center">
         <div class="grid lg:w-1/2 lg:place-items-center">
-          <img
+          <!-- <img
             class="lg:object-fill 2xl:w-2/3 w-full"
             src="@/assets/images/Otto-dk-scheld.png"
             alt=""
-          />
+          /> -->
         </div>
 
         <div class="grid lg:place-items-start lg:w-1/2">

@@ -15,7 +15,7 @@
 
         
     <div class="flex w-2/3 mx-auto overflow-hidden rounded-lg shadow-md dark:bg-green">
-        <img class="object-cover w-1/3 h-64" src="@/assets/images/Otto-dk-scheld.png" alt="Article">
+        <!-- <img class="object-cover w-1/3 h-64" src="@/assets/images/Otto-dk-scheld.png" alt="Article"> -->
 
         <div class="p-6">
             <div>
