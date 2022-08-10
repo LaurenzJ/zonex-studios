@@ -1,6 +1,6 @@
 <template>
   
-  <CNavigation class=""></CNavigation>
+  <CNavigation></CNavigation>
   <div class="my-16"></div>
   <CFooter></CFooter>
 </template>

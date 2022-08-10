@@ -44,22 +44,22 @@
         class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 pb-4"
       >
         <router-link to="/" class="nav-link">
-          <li>Home</li>
+          <li v-on:click="showMenu=false">Home</li>
         </router-link>
         <router-link to="/news" class="nav-link">
-          <li>News</li>
+          <li v-on:click="showMenu=false">News</li>
         </router-link>
         <router-link to="/careers" class="nav-link">
-          <li>Careers</li>
+          <li v-on:click="showMenu=false">Careers</li>
         </router-link>
         <router-link to="/company" class="nav-link">
-          <li>Company</li>
+          <li v-on:click="showMenu=false">Company</li>
         </router-link>
         <router-link to="/contact" class="nav-link">
-          <li>Contact</li>
+          <li v-on:click="showMenu=false">Contact</li>
         </router-link>
         <router-link to="/community" class="nav-link">
-          <li>Community</li>
+          <li v-on:click="showMenu=false">Community</li>
         </router-link>
       </ul>
     </nav>

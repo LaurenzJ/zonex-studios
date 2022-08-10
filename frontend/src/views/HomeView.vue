@@ -46,9 +46,7 @@
           <div class="text-center 2xl:w-2/3 w-full">
             <button
               class="shadow bg-[#a9bc93] hover:bg-green-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 my-4 px-4 rounded"
-              type="button"
-              onclick="location.href='/product/diekrech'"
-            >
+              type="button" onclick="location.href='/product/diekrech'">
               Kafen
             </button>
           </div>
@@ -61,25 +59,13 @@
           <h2 class="text-center 2xl:w-2/3 w-full pb-6">Sozial Medien</h2>
           <p class="text-center 2xl:w-2/3 w-full text-xl">
             Wat d’Sozial Medien ubelaangt si mir aktiv op
-            <a
-              class="underline hover:no-underline hover:text-black text-green"
-              target="_blank"
-              href="https://www.instagram.com/foodsteps.lu/?fbclid=IwAR2A3KdDo2qJZXPHkCQY4h0gHtpAPEJ9iYa4jAFbF0OU0NMQU2q2vTdx98Q"
-              >Instagram</a
-            >,
-            <a
-              class="underline hover:no-underline hover:text-black text-green"
-              target="_blank"
-              href="https://www.facebook.com/people/Foodsteps-Lux/100073846185606/"
-              >Facebook</a
-            >
+            <a class="underline hover:no-underline hover:text-black text-green" target="_blank"
+              href="https://www.instagram.com/foodsteps.lu/?fbclid=IwAR2A3KdDo2qJZXPHkCQY4h0gHtpAPEJ9iYa4jAFbF0OU0NMQU2q2vTdx98Q">Instagram</a>,
+            <a class="underline hover:no-underline hover:text-black text-green" target="_blank"
+              href="https://www.facebook.com/people/Foodsteps-Lux/100073846185606/">Facebook</a>
             an
-            <a
-              class="underline hover:no-underline hover:text-black text-green"
-              target="_blank"
-              href="https://twitter.com/FoodSteps_lu?fbclid=IwAR1XznlSQXmVzo2AH56OEg5XjKn8FaWO5qT4dLaVo3fJuvzAFCodQ_k6mAM"
-              >Twitter</a
-            >
+            <a class="underline hover:no-underline hover:text-black text-green" target="_blank"
+              href="https://twitter.com/FoodSteps_lu?fbclid=IwAR1XznlSQXmVzo2AH56OEg5XjKn8FaWO5qT4dLaVo3fJuvzAFCodQ_k6mAM">Twitter</a>
             wou mir regelméissegen Kontent posten fir Iech um lafenden ze halen.
             Do fannt Dir Informatiounen déi haaptsächlech mat Neiegkeeten oder
             Ännerungen vun eisem Projet ze dinn hunn. Awer och Kontent zu eiser
@@ -91,25 +77,13 @@
           <h2 class="text-center 2xl:w-2/3 w-full pb-6">Kooperatiounen</h2>
           <p class="text-center 2xl:w-2/3 w-full text-xl">
             Dank eise Geschäftspartner, dem
-            <a
-              class="underline hover:no-underline hover:text-black text-green"
-              target="_blank"
-              href="https://www.cinescala.lu/de/"
-              >Ciné Scala</a
-            >,
-            <a
-              class="underline hover:no-underline hover:text-black text-green"
-              target="_blank"
-              href="https://fischer1913.com/"
-              >Fischer</a
-            >
+            <a class="underline hover:no-underline hover:text-black text-green" target="_blank"
+              href="https://www.cinescala.lu/de/">Ciné Scala</a>,
+            <a class="underline hover:no-underline hover:text-black text-green" target="_blank"
+              href="https://fischer1913.com/">Fischer</a>
             an
-            <a
-              class="underline hover:no-underline hover:text-black text-green"
-              target="_blank"
-              href="https://www.editus.lu/fr/cafe-beim-frank-diekirch-524847"
-              >Beim Fränk</a
-            >
+            <a class="underline hover:no-underline hover:text-black text-green" target="_blank"
+              href="https://www.editus.lu/fr/cafe-beim-frank-diekirch-524847">Beim Fränk</a>
             konnt eisen Projet mat Succès ëmgesat ginn. Mir sinn frou mat dësen
             dräi Betriber zesummen ze schaffen an bedanken eis vir
             d’Méiglechkeet vun dësen Kooperatiounen.
@@ -123,15 +97,9 @@
         <h1 class="text-2xl md:text-5xl">
           Weider Aktivitéiten <br />
           <span>kommen, schreift Iech fir <br /></span>
-          <span
-            >eis
-            <a
-              class="underline hover:no-underline hover:text-black text-green"
-              href="/newsletter"
-              >Newsletter</a
-            >
-            an.</span
-          >
+          <span>eis
+            <a class="underline hover:no-underline hover:text-black text-green" href="/newsletter">Newsletter</a>
+            an.</span>
         </h1>
       </div>
     </div>
@@ -139,6 +107,7 @@
 </template>
 
 <script>
+
 export default {
   name: "HomeView",
 };
