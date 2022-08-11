@@ -1,10 +1,10 @@
 <template>
-  <div class="contact text-white">
+  <div class="contact text-white w-full">
     <!-- a lot of the lines are just svg text, actual html is simple 
 A sample contact us page form written with tailwind css
 Illustration from undraw.co by the amazing Katerina Limpitsouni
 -->
-    <body class="text-gray-100 px-8 py-12">
+    <body class="text-gray-100 lg:px-8 py-12">
       <div class="text-center w-full">
         <h1>Contact</h1>
       </div>
@@ -1036,11 +1036,14 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
             ></textarea>
           </div>
           <div class="mt-8">
-            <button
-              class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
-            >
-              Send Message
-            </button>
+            <transition>
+              <button v-if="show"
+                @click="show = !show"
+                class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+              >
+                Send Message
+              </button>
+            </transition>
           </div>
         </div>
       </div>
@@ -1051,5 +1054,6 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
 <script>
 export default {
   name: "ContactView",
+
 };
 </script>

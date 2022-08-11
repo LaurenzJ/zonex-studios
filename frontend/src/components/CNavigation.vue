@@ -14,7 +14,7 @@
             <img
               src="@/assets/images/logo.png"
               alt="SlimeSpy2"
-              class="w-32 md:w-32"
+              class="w-24 md:w-32"
             />
             <div class="m-auto">
               <h2 class="tracking-widest">ZONEX</h2>
@@ -64,7 +64,15 @@
       </ul>
     </nav>
   </div>
-  <router-view class="pt-16" />
+  <router-view class="pt-16" v-slot="{ Component }">
+    <transition
+      enter-active-class="animate__animated animate__fadeInLeft"
+      leave-active-class="animate__animated animate__fadeOutLeft"
+      mode="out-in"
+    >
+      <component :is="Component" />
+    </transition>
+  </router-view>
 </template>
 
 <script>
@@ -78,7 +86,13 @@ export default {
 </script>
 
 <style>
+
 a.router-link-exact-active {
   color: #a9bc93;
 }
+
+.animate__animated {
+  --animate-duration: 0.8s;
+}
+
 </style>

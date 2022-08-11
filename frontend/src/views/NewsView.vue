@@ -120,7 +120,7 @@
                 data-mdb-ripple-color="light"
               >
                 <img
-                  src="hhttps://shahpourpouyan.com/wp-content/uploads/2018/10/orionthemes-placeholder-image-1.png"
+                  src="https://shahpourpouyan.com/wp-content/uploads/2018/10/orionthemes-placeholder-image-1.png"
                   class="w-full"
                   alt="Louvre"
                 />

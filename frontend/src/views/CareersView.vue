@@ -1,5 +1,5 @@
 <template>
-  <div class="careers text-white">
+  <div class="careers text-white w-full">
     <div class="grid place-items-center space-y-16 px-6">
       <h1>Careers</h1>
       <iframe

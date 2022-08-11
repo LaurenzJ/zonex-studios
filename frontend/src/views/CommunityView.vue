@@ -1,5 +1,5 @@
 <template>
-  <div class="community text-white h-screen">
+  <div class="community text-white h-screen w-full">
     <div class="grid place-items-center space-y-16 px-6 h-full">
       <div class="md:w-1/2 w-full">
         <div>
