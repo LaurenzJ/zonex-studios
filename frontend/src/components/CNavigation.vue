@@ -44,35 +44,43 @@
         class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 pb-4"
       >
         <router-link to="/" class="nav-link">
-          <li v-on:click="showMenu=false">Home</li>
+          <li v-on:click="showMenu = false">Home</li>
         </router-link>
         <router-link to="/news" class="nav-link">
-          <li v-on:click="showMenu=false">News</li>
+          <li v-on:click="showMenu = false">News</li>
         </router-link>
         <router-link to="/careers" class="nav-link">
-          <li v-on:click="showMenu=false">Careers</li>
+          <li v-on:click="showMenu = false">Careers</li>
         </router-link>
         <router-link to="/company" class="nav-link">
-          <li v-on:click="showMenu=false">Company</li>
+          <li v-on:click="showMenu = false">Company</li>
         </router-link>
         <router-link to="/contact" class="nav-link">
-          <li v-on:click="showMenu=false">Contact</li>
+          <li v-on:click="showMenu = false">Contact</li>
         </router-link>
         <router-link to="/community" class="nav-link">
-          <li v-on:click="showMenu=false">Community</li>
+          <li v-on:click="showMenu = false">Community</li>
         </router-link>
       </ul>
     </nav>
   </div>
-  <router-view class="pt-16" v-slot="{ Component }">
-    <transition
-      enter-active-class="animate__animated animate__fadeInLeft"
-      leave-active-class="animate__animated animate__fadeOutLeft"
-      mode="out-in"
-    >
-      <component :is="Component" />
-    </transition>
-  </router-view>
+  <router-view
+    class="pt-16"
+    v-motion
+    :initial="{
+      opacity: 0,
+      y: 100,
+    }"
+    :enter="{
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: 'spring',
+        stiffness: '100',
+        delay: 100,
+      },
+    }"
+  />
 </template>
 
 <script>
@@ -86,7 +94,6 @@ export default {
 </script>
 
 <style>
-
 a.router-link-exact-active {
   color: #a9bc93;
 }
@@ -94,5 +101,4 @@ a.router-link-exact-active {
 .animate__animated {
   --animate-duration: 0.8s;
 }
-
 </style>
