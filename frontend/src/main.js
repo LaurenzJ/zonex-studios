@@ -5,4 +5,7 @@ import router from './router'
 
 import 'flowbite';
 
-createApp(App).use(router).mount('#app')
+
+const Vue = createApp(App)
+
+Vue.use(router).mount('#app')

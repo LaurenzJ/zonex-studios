@@ -13,7 +13,7 @@
           <div class="flex">
             <img
               src="@/assets/images/logo.png"
-              alt="SlimeSpy2"
+              alt="logo"
               class="w-24 md:w-32"
             />
             <div class="m-auto">

@@ -26,6 +26,8 @@
             aperiam optio reprehenderit voluptatum deserunt hic odio facere sed
             laudantium, quisquam iure.
           </p>
+
+          
         </div>
         <div class="lg:w-1/2 w-full m-auto">
           <div>
