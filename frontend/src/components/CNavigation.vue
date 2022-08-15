@@ -76,8 +76,8 @@
       y: 0,
       transition: {
         type: 'spring',
-        stiffness: '100',
-        delay: 100,
+        stiffness: '300',
+        duration: 2000,
       },
     }"
   />

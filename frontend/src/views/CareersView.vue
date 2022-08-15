@@ -1,8 +1,8 @@
 <template>
   <div class="careers text-white w-full">
     <div class="grid place-items-center space-y-16 px-6">
-      <h1>Careers</h1>
-      <iframe
+      <h1 v-motion-pop-right>Careers</h1>
+      <iframe v-motion-pop-right
         class="w-full aspect-video"
         width="1180"
         height="500"

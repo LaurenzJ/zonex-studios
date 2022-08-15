@@ -1,7 +1,7 @@
 <template>
   <div class="news text-white">
     <div class="grid place-items-center px-6">
-      <h1 class="pb-16">News</h1>
+      <h1 v-motion-pop-right class="pb-16">News</h1>
 
       <div class="container my-24 px-6 mx-auto">
 

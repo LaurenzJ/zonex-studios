@@ -6,7 +6,7 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
 -->
     <body class="text-gray-100 lg:px-8 py-12">
       <div class="text-center w-full">
-        <h1>Contact</h1>
+        <h1 v-motion-pop-right>Contact</h1>
       </div>
       <div
         class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg"
@@ -1036,14 +1036,11 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
             ></textarea>
           </div>
           <div class="mt-8">
-            <transition>
-              <button v-if="show"
-                @click="show = !show"
-                class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
-              >
-                Send Message
-              </button>
-            </transition>
+            <button
+              class="uppercase text-sm font-bold tracking-wide bg-red-900 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+            >
+              Send Message
+            </button>
           </div>
         </div>
       </div>
@@ -1054,6 +1051,5 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
 <script>
 export default {
   name: "ContactView",
-
 };
 </script>

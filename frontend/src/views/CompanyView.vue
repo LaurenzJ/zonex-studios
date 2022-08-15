@@ -1,11 +1,11 @@
 <template>
   <div class="company bg-black text-white">
     <div class="grid place-items-center space-y-16 px-6">
-      <h1>Company</h1>
+      <h1 v-motion-pop-right>Company</h1>
     
       <div class="p-2 w-full h-full lg:flex text-white">
         <div class="lg:w-1/3 w-full m-auto space-y-6 text-justify">
-          <p>
+          <p v-motion-pop-up>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
             eligendi qui repellat amet necessitatibus voluptatum dolorum quis
             accusantium pariatur perspiciatis. Reiciendis quo facilis iure
@@ -14,13 +14,13 @@
             porro, esse sequi aliquam repudiandae aperiam optio reprehenderit
             voluptatum deserunt hic odio facere sed laudantium, quisquam iure.
           </p>
-          <p>
+          <p v-motion-pop-right-delay-500>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
             eligendi qui repellat amet necessitatibus voluptatum dolorum quis
             accusantium pariatur perspiciatis. Reiciendis quo facilis iure
             distinctio ex et at saepe molestiae.
           </p>
-          <p>
+          <p v-motion-pop-down>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex
             reiciendis velit molestiae porro, esse sequi aliquam repudiandae
             aperiam optio reprehenderit voluptatum deserunt hic odio facere sed
