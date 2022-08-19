@@ -1,10 +1,12 @@
 <template>
-  <div class="news text-white">
+  <div class="news text-white bg-black">
     <div class="grid place-items-center px-6">
       <h1 v-motion-pop-right class="pb-16">News</h1>
-
-      <div class="container my-24 px-6 mx-auto">
-
+      <div v-if="showModal">
+        <button @click="showModal = false">X</button>
+        <img v-bind:src="currentImage" alt="" />
+      </div>
+      <div v-if="!showModal" class="container my-24 px-6 mx-auto">
         <section class="mb-32 text-gray-300 text-center md:text-left">
           <h2 class="text-3xl font-bold mb-12 text-center">Latest news</h2>
 
@@ -13,6 +15,12 @@
           >
             <div class="mb-6 md:mb-0">
               <div
+                v-motion-roll-bottom
+                @click="
+                  showImage(
+                    'https://shahpourpouyan.com/wp-content/uploads/2018/10/orionthemes-placeholder-image-1.png'
+                  )
+                "
                 class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="light"
@@ -54,7 +62,11 @@
                 >
               </p>
               <p class="text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure reprehenderit, voluptatem aliquid necessitatibus minus facere, aut iusto sequi dignissimos accusamus dolores, repudiandae autem! Amet tempora iusto incidunt assumenda reprehenderit asperiores?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                reprehenderit, voluptatem aliquid necessitatibus minus facere,
+                aut iusto sequi dignissimos accusamus dolores, repudiandae
+                autem! Amet tempora iusto incidunt assumenda reprehenderit
+                asperiores?
               </p>
             </div>
           </div>
@@ -64,6 +76,12 @@
           >
             <div class="mb-6 md:mb-0 md:order-2">
               <div
+                v-motion-roll-visible-once-bottom
+                @click="
+                  showImage(
+                    'https://shahpourpouyan.com/wp-content/uploads/2018/10/orionthemes-placeholder-image-1.png'
+                  )
+                "
                 class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="light"
@@ -105,7 +123,10 @@
                 >
               </p>
               <p class="text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam maxime corrupti mollitia laudantium laboriosam, nesciunt deleniti, cum consequuntur maiores ea molestias enim debitis illum quia ad id quos incidunt aperiam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                maxime corrupti mollitia laudantium laboriosam, nesciunt
+                deleniti, cum consequuntur maiores ea molestias enim debitis
+                illum quia ad id quos incidunt aperiam!
               </p>
             </div>
           </div>
@@ -115,6 +136,12 @@
           >
             <div class="mb-6 md:mb-0">
               <div
+                v-motion-roll-visible-once-bottom
+                @click="
+                  showImage(
+                    'https://shahpourpouyan.com/wp-content/uploads/2018/10/orionthemes-placeholder-image-1.png'
+                  )
+                "
                 class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="light"
@@ -173,5 +200,17 @@
 <script>
 export default {
   name: "NewsView",
+  data() {
+    return {
+      showModal: false,
+      currentImage: null,
+    };
+  },
+  methods: {
+    showImage(image) {
+      this.currentImage = image;
+      this.showModal = true;
+    },
+  },
 };
 </script>

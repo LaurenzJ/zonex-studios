@@ -88,6 +88,21 @@ Vue.use(MotionPlugin, {
         },
       },
     },
+    "rotate-10-delay-500": {
+      initial: {
+        y: 40,
+        opacity: 0.25,
+        rotate: -10,
+      },
+      enter: {
+        y: 0,
+        opacity: 1,
+        rotate: 0,
+        transition: {
+          duration: 2000,
+        },
+      },
+    },
   },
 });
 Vue.use(router).mount("#app");

@@ -9,14 +9,20 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
         <h1 v-motion-pop-right>Contact</h1>
       </div>
       <div
-        class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg"
+        class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-[#150606] text-gray-200 rounded-lg shadow-lg"
       >
         <div class="flex flex-col justify-between">
           <div>
-            <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
-              Lets talk about everything!
+            <h2
+              v-motion-pop-down
+              class="text-4xl lg:text-5xl font-bold leading-tight"
+            >
+              Let's talk about everything!
             </h2>
-            <div class="text-gray-700 mt-8">
+            <div
+              v-motion-rotate-10-delay-500
+              class=" mt-8"
+            >
               Hate forms? Send us an
               <span class="underline">email</span> instead.
             </div>
@@ -30,6 +36,23 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
               data-name="Layer 1"
               viewBox="0 0 1096 574.74"
             >
+              <!-- v-motion
+              :initial="{
+                scale: 1,
+                y: 0,
+                x: -20,
+              }"
+              :enter="{
+                scale: 1.02,
+                y: -10,
+                x: 0,
+                transition: {
+                  duration: 3000,
+                  repeat: Infinity,
+                  repeatType: 'mirror',
+                },
+              }" -->
+
               <defs>
                 <linearGradient
                   id="eb6c86d6-45fa-49e0-9a60-1b0612516196"
@@ -182,7 +205,25 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
                   opacity="0.1"
                 />
               </g>
-              <g opacity="0.1">
+              <g
+                v-motion
+                :initial="{
+                  scale: 1.02,
+                  x: 0,
+                  y: 0,
+                }"
+                :enter="{
+                  scale: 1,
+                  x: -5,
+                  y: -1,
+                  transition: {
+                    repeat: Infinity,
+                    repeatType: 'mirror',
+                    duration: 1000,
+                  },
+                }"
+                opacity="0.1"
+              >
                 <ellipse
                   cx="612.28"
                   cy="330.26"
@@ -220,7 +261,25 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
                   opacity="0.1"
                 />
               </g>
-              <g opacity="0.1">
+              <g
+                v-motion
+                :initial="{
+                  scale: 1,
+                  x: 0,
+                  y: 0,
+                }"
+                :enter="{
+                  scale: 1.01,
+                  x: -5,
+                  y: -1,
+                  transition: {
+                    repeat: Infinity,
+                    repeatType: 'mirror',
+                    duration: 1000,
+                  },
+                }"
+                opacity="0.1"
+              >
                 <ellipse
                   cx="1038.58"
                   cy="322.12"
@@ -258,7 +317,23 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
                   opacity="0.1"
                 />
               </g>
-              <g opacity="0.1">
+              <g
+                v-motion
+                :initial="{
+                  scale: 1,
+                  x: 0,
+                }"
+                :enter="{
+                  scale: 1,
+                  x: -15,
+                  transition: {
+                    repeat: Infinity,
+                    repeatType: 'mirror',
+                    duration: 2000,
+                  },
+                }"
+                opacity="0.1"
+              >
                 <ellipse
                   cx="928.72"
                   cy="324.26"
@@ -296,7 +371,25 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
                   opacity="0.1"
                 />
               </g>
-              <g opacity="0.1">
+              <g
+                v-motion
+                :initial="{
+                  scale: 1,
+                  x: 0,
+                  y: 0,
+                }"
+                :enter="{
+                  scale: 1,
+                  x: 5,
+                  y: 7,
+                  transition: {
+                    repeat: Infinity,
+                    repeatType: 'mirror',
+                    duration: 1000,
+                  },
+                }"
+                opacity="0.1"
+              >
                 <ellipse
                   cx="61.59"
                   cy="322.12"
@@ -334,7 +427,25 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
                   opacity="0.1"
                 />
               </g>
-              <g opacity="0.1">
+              <g
+                v-motion
+                :initial="{
+                  scale: 1,
+                  x: 0,
+                  y: 0,
+                }"
+                :enter="{
+                  scale: 1,
+                  x: -5,
+                  y: -1,
+                  transition: {
+                    repeat: Infinity,
+                    repeatType: 'mirror',
+                    duration: 1000,
+                  },
+                }"
+                opacity="0.1"
+              >
                 <ellipse
                   cx="171.44"
                   cy="324.26"
@@ -692,7 +803,28 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
                 transform="translate(-52 -162.63)"
                 opacity="0.1"
               />
-              <circle cx="776.11" cy="438.7" r="9.04" fill="#be6f72" />
+              <circle
+                v-motion
+                :initial="{
+                  scale: 1,
+                  x: 0,
+                  y: 0,
+                }"
+                :enter="{
+                  scale: 1,
+                  x: -5,
+                  y: -1,
+                  transition: {
+                    repeat: Infinity,
+                    repeatType: 'mirror',
+                    duration: 1000,
+                  },
+                }"
+                cx="776.11"
+                cy="438.7"
+                r="9.04"
+                fill="#be6f72"
+              />
               <path
                 d="M840.88,729.64c0,.79-1.57,2.75-1.57,2.75a19.46,19.46,0,0,1-9.43-1.18c-.79-.39.39-2.75.39-2.75l.09-.19a9.54,9.54,0,0,1,1.49-2.56c.78-.78,1.25-4,1.25-4,2.44-4,6.77,1.73,6.77,1.73s.55,3,.84,4.82C840.81,728.91,840.88,729.44,840.88,729.64Z"
                 transform="translate(-52 -162.63)"
@@ -869,6 +1001,22 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
                 fill="url(#a964f849-fa65-4178-8cc4-fb8fb10b3617)"
               />
               <polygon
+                v-motion
+                :initial="{
+                  scale: 1,
+                  x: 0,
+                  y: 0,
+                }"
+                :enter="{
+                  scale: 1,
+                  x: -5,
+                  y: -1,
+                  transition: {
+                    repeat: Infinity,
+                    repeatType: 'mirror',
+                    duration: 1000,
+                  },
+                }"
                 points="415.35 438.25 417.53 438.69 424.96 449.68 421.69 450.12 415.35 438.25"
                 fill="#2f2e41"
               />
@@ -999,6 +1147,22 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
                 opacity="0.1"
               />
               <ellipse
+                v-motion
+                :initial="{
+                  scale: 1,
+                  x: 0,
+                  y: 0,
+                }"
+                :enter="{
+                  scale: 1,
+                  x: -5,
+                  y: -1,
+                  transition: {
+                    repeat: Infinity,
+                    repeatType: 'mirror',
+                    duration: 1000,
+                  },
+                }"
                 cx="505.04"
                 cy="584.74"
                 rx="1.31"
@@ -1011,24 +1175,24 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
         </div>
         <div class="">
           <div>
-            <span class="uppercase text-sm text-gray-600 font-bold"
+            <span class="uppercase text-sm  font-bold"
               >Full Name</span
             >
             <input
-              class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              class="w-full bg-gray-300 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               type="text"
               placeholder=""
             />
           </div>
           <div class="mt-8">
-            <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
+            <span class="uppercase text-sm font-bold">Email</span>
             <input
               class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               type="text"
             />
           </div>
           <div class="mt-8">
-            <span class="uppercase text-sm text-gray-600 font-bold"
+            <span class="uppercase text-sm  font-bold"
               >Message</span
             >
             <textarea

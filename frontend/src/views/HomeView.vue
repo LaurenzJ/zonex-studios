@@ -1,6 +1,6 @@
 <template>
   <div class="home text-white">
-    <div class="grid place-items-center space-y-16 px-6">
+    <div class="grid place-items-center px-6">
       <div class="relative lg:w-full lg:flex m-auto place-items-center">
         <img
           class="absolute h-full w-full"
@@ -9,13 +9,14 @@
         />
         <div
           v-motion-pop-down-delay-1000
-          class="overflow-auto w-full lg:w-1/2 m-auto place-items-center"
+          class="overflow-auto w-full lg:w-1/2 m-auto place-items-center mt-8"
         >
           <img src="@/assets/images/home/reflection.png" alt="" />
           <div class="flex flex-col justify-center items-center">
             <button
+              onclick="window.open('https://store.steampowered.com/app/2067260/Reflection/')"
               type="button"
-              class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800"
+              class="text-red-300 hover:text-white border border-red-300 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800"
             >
               Buy Now
             </button>
@@ -24,7 +25,7 @@
         <div class="w-full lg:w-1/2 m-auto place-items-center">
           <img
             v-motion-pop-right
-            src="@/assets/images/prototype_character.png"
+            src="@/assets/images/home/character.png"
             alt=""
           />
         </div>

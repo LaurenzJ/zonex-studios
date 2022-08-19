@@ -1,6 +1,6 @@
 <template>
   <div
-    class="z-10 text-white top-0 sticky font-h1 py-0 bg-[#370000] bg-opacity-70 backdrop-blur-xl"
+    class="z-10 text-white top-0 sticky font-h1 py-0 bg-gradient-to-b from-[#370000] to-black bg-opacity-70 backdrop-blur-xl"
   >
     <nav
       class="sticky top-0 container px-6 mx-auto md:flex md:justify-between md:items-center"
