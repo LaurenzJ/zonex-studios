@@ -161,7 +161,7 @@
             </div>
 
             <div class="mb-6 md:mb-0">
-              <h3 class="text-2xl font-bold mb-3">Stock market boom</h3>
+              <h3 class="text-2xl font-bold mb-3">Lorem ipsum</h3>
               <div
                 class="mb-3 text-yellow-500 font-medium text-sm flex items-center justify-center md:justify-start"
               >

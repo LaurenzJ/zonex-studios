@@ -1,9 +1,5 @@
 <template>
   <div class="contact text-white w-full">
-    <!-- a lot of the lines are just svg text, actual html is simple 
-A sample contact us page form written with tailwind css
-Illustration from undraw.co by the amazing Katerina Limpitsouni
--->
     <body class="text-gray-100 lg:px-8 py-12">
       <div class="text-center w-full">
         <h1 v-motion-pop-right>Contact</h1>
@@ -19,10 +15,7 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
             >
               Let's talk about everything!
             </h2>
-            <div
-              v-motion-rotate-10-delay-500
-              class=" mt-8"
-            >
+            <div v-motion-rotate-10-delay-500 class="mt-8">
               Hate forms? Send us an
               <span class="underline">email</span> instead.
             </div>
@@ -1175,9 +1168,7 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
         </div>
         <div class="">
           <div>
-            <span class="uppercase text-sm  font-bold"
-              >Full Name</span
-            >
+            <span class="uppercase text-sm font-bold">Full Name</span>
             <input
               class="w-full bg-gray-300 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               type="text"
@@ -1192,9 +1183,7 @@ Illustration from undraw.co by the amazing Katerina Limpitsouni
             />
           </div>
           <div class="mt-8">
-            <span class="uppercase text-sm  font-bold"
-              >Message</span
-            >
+            <span class="uppercase text-sm font-bold">Message</span>
             <textarea
               class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
             ></textarea>
