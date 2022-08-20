@@ -6,7 +6,7 @@
         <button @click="showModal = false">X</button>
         <img v-bind:src="currentImage" alt="" />
       </div>
-      <div v-if="!showModal" class="container my-24 px-6 mx-auto">
+      <div v-show="!showModal" class="container my-24 px-6 mx-auto">
         <section class="mb-32 text-gray-300 text-center md:text-left">
           <h2 class="text-3xl font-bold mb-12 text-center">Latest news</h2>
 
