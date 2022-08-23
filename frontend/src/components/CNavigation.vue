@@ -95,7 +95,7 @@ export default {
 
 <style>
 a.router-link-exact-active {
-  color: #a9bc93;
+  color: crimson;
 }
 
 .animate__animated {

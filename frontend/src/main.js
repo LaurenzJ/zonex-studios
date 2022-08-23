@@ -57,6 +57,22 @@ Vue.use(MotionPlugin, {
         },
       },
     },
+    "pop-down-delay-2000" : {
+      initial: {
+        scale: 1,
+        opacity: 0,
+        y: -100,
+      },
+      enter: {
+        scale: 1,
+        opacity: 1,
+        y: 0,
+        transition: {
+          delay: 1000,
+          duration: 2000,
+        },
+      },
+    },
     "pop-up": {
       initial: {
         scale: 1,
