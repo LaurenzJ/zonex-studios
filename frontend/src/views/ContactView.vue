@@ -17,7 +17,7 @@
             </h2>
             <div v-motion-rotate-10-delay-500 class="mt-8">
               Hate forms? Send us an
-              <span class="underline">email</span> instead.
+              <a href="mailto:info@zonexstudio.com"><span class="underline">email</span> instead.</a>
             </div>
           </div>
           <div class="mt-8 text-center">
@@ -1171,7 +1171,6 @@
             action="https://formsubmit.co/info@zonexstudio.com"
             method="POST"
           >
-           
             <div class="">
               <span class="uppercase text-sm font-bold">Full Name</span>
               <input
@@ -1185,11 +1184,13 @@
               <input
                 class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="email"
+                name="email"
               />
             </div>
             <div class="mt-8">
               <span class="uppercase text-sm font-bold">Message</span>
               <textarea
+                name="message"
                 class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               ></textarea>
             </div>
