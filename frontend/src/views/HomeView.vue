@@ -65,11 +65,11 @@ export default {
   },
   methods: {
     nextCharacter() {
-      this.currentCharacter = this.characters[this.currentCharacterIndex];
       this.currentCharacterIndex++;
       if (this.currentCharacterIndex >= this.characters.length) {
         this.currentCharacterIndex = 0;
       }
+      this.currentCharacter = this.characters[this.currentCharacterIndex];
     },
   },
 };

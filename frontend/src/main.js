@@ -25,6 +25,12 @@ Vue.use(MotionPlugin, {
           duration: 2000,
         },
       },
+      tapped: {
+        scale: 0.9,
+        opacity: .9,
+        x: -100,
+        
+      },
     },
     "pop-down": {
       initial: {
@@ -57,7 +63,7 @@ Vue.use(MotionPlugin, {
         },
       },
     },
-    "pop-down-delay-2000" : {
+    "pop-down-delay-2000": {
       initial: {
         scale: 1,
         opacity: 0,
