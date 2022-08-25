@@ -17,7 +17,9 @@
             </h2>
             <div v-motion-rotate-10-delay-500 class="mt-8">
               Hate forms? Send us an
-              <a href="mailto:info@zonexstudio.com"><span class="underline">email</span> instead.</a>
+              <a href="mailto:info@zonexstudio.com"
+                ><span class="underline">email</span> instead.</a
+              >
             </div>
           </div>
           <div class="mt-8 text-center">
@@ -1171,6 +1173,8 @@
             action="https://formsubmit.co/info@zonexstudio.com"
             method="POST"
           >
+            <input type="hidden" name="_next" value="http://localhost:8080/contact" />
+            <input type="hidden" name="_captcha" value="false" />
             <div class="">
               <span class="uppercase text-sm font-bold">Full Name</span>
               <input
