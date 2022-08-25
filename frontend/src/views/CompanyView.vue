@@ -1,5 +1,20 @@
 <template>
   <div class="company bg-black text-white">
+    <div v-if="showModal" class="food__menu">
+          <a href="#" class="food__list" v-for="food in foods" :key="food">
+            <div class="food__image">
+              <img
+                :src="food.image"
+                :class="{fullWidthImage : fullWidthImage }"
+                @click="fullWidthImage = !fullWidthImage"
+              />
+            </div>
+            <div class="food__details">
+              <span class="food__name">{{food.name}}</span>
+              <span class="food__type">{{food.type}}</span>
+            </div>
+          </a>
+        </div>
     <div class="grid place-items-center space-y-16 px-6">
       <h1 v-motion-pop-right>Company</h1>
 
@@ -72,7 +87,7 @@
                         src="@/assets/images/company/Itower.jpeg"
                       />
                     </div>
-                    <div class="lg:w-1/2 w-full p-1 md:p-2">
+                    <div class=" w-full p-1 md:p-2">
                       <img
                         @click="
                           showImage(
@@ -84,7 +99,7 @@
                         src="@/assets/images/company/lounge.png"
                       />
                     </div>
-                    <div class="lg:w-1/2 w-full p-1 md:p-2">
+                    <!-- <div class="lg:w-1/2 w-full p-1 md:p-2">
                       <img
                         @click="
                           showImage(
@@ -93,9 +108,9 @@
                         "
                         alt="gallery"
                         class="block object-cover object-center w-full h-full rounded-lg"
-                        src="https://shahpourpouyan.com/wp-content/uploads/2018/10/orionthemes-placeholder-image-1.png"
+                        src="@/assets/images/company/kicker.png"
                       />
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
