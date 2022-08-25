@@ -27,6 +27,8 @@
             aperiam optio reprehenderit voluptatum deserunt hic odio facere sed
             laudantium, quisquam iure.
           </p>
+
+          
         </div>
         <div class="lg:w-1/2 w-full m-auto">
           <div>
@@ -63,9 +65,7 @@
                     <div class="lg:w-full w-full p-1 md:p-2">
                       <img
                         @click="
-                          showImage(
-                            '@/assets/images/company/Itower.jpeg'
-                          )
+                          showImage('@/assets/images/company/Itower.jpeg')
                         "
                         alt="gallery"
                         class="block object-cover object-center w-full h-full rounded-lg"
