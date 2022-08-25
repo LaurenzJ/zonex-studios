@@ -1,6 +1,6 @@
 <template>
-  <div class="home text-white">
-    <div class="grid place-items-center px-6">
+  <div class="home pt-0 text-white">
+    <div class="grid place-items-center px-0 pt-0">
       <div class="relative lg:w-full lg:flex m-auto place-items-center">
         <img
           class="absolute h-full w-full"

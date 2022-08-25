@@ -125,6 +125,28 @@ Vue.use(MotionPlugin, {
         },
       },
     },
+    "roll-on-visible": {
+      initial: {
+        x: -15,
+      },
+      visible: {
+        x: 0,
+        transition: {
+          duration: 1000
+        }
+      }
+    },
+    "fade-down-on-visible": {
+      initial: {
+        y: -15,
+      },
+      visible: {
+        y: 0,
+        transition: {
+          duration: 1000
+        }
+      }
+    },
   },
 });
 Vue.use(router).mount("#app");

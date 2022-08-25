@@ -25,8 +25,9 @@
         <!-- Mobile menu button -->
         <div @click="showMenu = !showMenu" class="flex md:hidden">
           <button
+
             type="button"
-            class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400"
+            class="text-white hover:text-white focus:outline-none focus:text-white"
           >
             <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
               <path
@@ -39,7 +40,7 @@
       </div>
 
       <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-      <ul
+      <ul v-motion-fade-down-on-visible
         :class="showMenu ? 'flex' : 'hidden'"
         class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 pb-4"
       >
