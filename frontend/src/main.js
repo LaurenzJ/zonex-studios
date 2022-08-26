@@ -22,8 +22,21 @@ Vue.use(MotionPlugin, {
         opacity: 1,
         x: 0,
         transition: {
-          duration: 2000,
+          duration: 1000,
         },
+      },
+      tapped: {
+        scale: 0.9,
+        opacity: .9,
+        x: -100,
+        
+      },
+    },
+    "pop-right-pc": {
+      initial: {
+        scale: 0.9,
+        opacity: 1,
+        x: 0,
       },
       tapped: {
         scale: 0.9,
@@ -43,7 +56,7 @@ Vue.use(MotionPlugin, {
         opacity: 1,
         y: 0,
         transition: {
-          duration: 2000,
+          duration: 1000,
         },
       },
     },
@@ -59,7 +72,7 @@ Vue.use(MotionPlugin, {
         y: 0,
         transition: {
           delay: 1000,
-          duration: 2000,
+          duration: 1000,
         },
       },
     },
@@ -75,7 +88,7 @@ Vue.use(MotionPlugin, {
         y: 0,
         transition: {
           delay: 1000,
-          duration: 2000,
+          duration: 1000,
         },
       },
     },

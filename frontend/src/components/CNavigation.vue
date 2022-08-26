@@ -3,7 +3,7 @@
     class="z-10 text-white top-0 sticky font-h1 py-0 -mt-6 bg-opacity-10 backdrop-blur-xl"
   >
     <nav
-      class="sticky top-0 container px-6 mx-auto md:flex md:justify-between md:items-center"
+      class="sticky top-0 container px-6 mx-auto md:flex md:justify-between md:items-center grid  m-auto"
     >
       <div class="flex items-center justify-between">
         <router-link
@@ -45,7 +45,7 @@
       <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
       <ul v-motion-fade-down-on-visible
         :class="showMenu ? 'flex' : 'hidden'"
-        class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 pb-4"
+        class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 pb-0"
       >
         <router-link to="/" class="nav-link">
           <li v-on:click="showMenu = false">Home</li>

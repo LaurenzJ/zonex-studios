@@ -14,17 +14,18 @@
           <img src="@/assets/images/home/reflection.png" alt="" />
           <div class="flex flex-col justify-center items-center">
             <div
-              v-motion-pop-right
+              v-motion-pop-down-delay-1000
             >
               <button
-                v-motion-pop-down-delay-2000
+                
+                v-motion-pop-right-pc
                 type="button"
                 class="font-singa text-3xl text-white transition duration-500 bg-black bg-opacity-40 backdrop-blur-xl border border-white-900 font-medium rounded-lg px-5 py-1.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800"
               >
                 Pc
               </button>
               <button
-                v-motion-pop-down-delay-2000
+
                 onclick="window.open('https://store.steampowered.com/app/2067260/Reflection/')"
                 type="button"
                 class="font-singa text-white bg-black bg-opacity-40 backdrop-blur-xl hover:text-white transition duration-500 border border-black hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-3xl px-5 py-1.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800"
@@ -34,7 +35,7 @@
             </div>
           </div>
         </div>
-        <div id="character" class="w-full lg:w-1/2 m-auto place-items-center">
+        <div id="character" class="w-full lg:w-1/2 mt-16 place-items-center">
           <img
             src="@/assets/images/home/character1.png"
             v-motion-pop-right

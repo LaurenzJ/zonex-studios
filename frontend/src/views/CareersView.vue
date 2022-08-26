@@ -7,7 +7,7 @@
         class="w-full aspect-video"
         width="1180"
         height="500"
-        src="https://www.youtube.com/embed/ZKuHqAiaSjA"
+        src="https://www.youtube.com/embed/sdeZZK9Yu2E"
         title="SlimeSpy2: Ninja Assassination"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
