@@ -11,7 +11,7 @@ module.exports = {
       'btn': ['Inter'],
       'h1': ['Inter'],
       'sans': 'Hoefler Text',
-      'singa': 'Singa Serif DEMO'
+      'singa': 'SINGA'
     },
   },
   plugins: [require('@tailwindcss/line-clamp'), require('@tailwindcss/aspect-ratio'),require('flowbite/plugin')],

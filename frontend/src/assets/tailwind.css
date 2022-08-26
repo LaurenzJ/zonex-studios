@@ -40,3 +40,9 @@
       @apply font-bold;
     }
   }
+
+  @font-face {
+    font-family: "SINGA";
+    src: url("../assets/Singa\ Serif\ Regular.ttf");
+  }
+  
