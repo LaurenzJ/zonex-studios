@@ -10,7 +10,8 @@ module.exports = {
     fontFamily: {
       'btn': ['Inter'],
       'h1': ['Inter'],
-      'sans': 'Hoefler Text'
+      'sans': 'Hoefler Text',
+      'singa': 'Singa Serif DEMO'
     },
   },
   plugins: [require('@tailwindcss/line-clamp'), require('@tailwindcss/aspect-ratio'),require('flowbite/plugin')],

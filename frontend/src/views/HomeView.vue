@@ -13,28 +13,37 @@
         >
           <img src="@/assets/images/home/reflection.png" alt="" />
           <div class="flex flex-col justify-center items-center">
-            <button
-              v-motion-pop-down-delay-2000
-              v-motion
-              :initial="{
-                scale: 1,
-                x: 0,
-              }"
-              :enter="{
-                scale: 1,
-                x: -10,
-                transition: {
-                  repeat: Infinity,
-                  repeatType: 'mirror',
-                  duration: 750,
-                },
-              }"
-              onclick="window.open('https://store.steampowered.com/app/2067260/Reflection/')"
-              type="button"
-              class="text-white bg-red-800 bg-opacity-40 backdrop-blur-xl hover:text-white border border-red-900 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800"
-            >
-              Buy Now
-            </button>
+            <div>
+              <button
+                
+                type="button"
+                class="font-singa text-3xl text-white bg-black bg-opacity-40 backdrop-blur-xl hover:text-white border border-white-900 hover:bg-red-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-5 py-1.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800"
+              >
+                Pc
+              </button>
+              <button
+                v-motion-pop-down-delay-2000
+                v-motion
+                :initial="{
+                  scale: 1,
+                  x: 0,
+                }"
+                :enter="{
+                  scale: 1,
+                  x: -8,
+                  transition: {
+                    repeat: Infinity,
+                    repeatType: 'mirror',
+                    duration: 750,
+                  },
+                }"
+                onclick="window.open('https://store.steampowered.com/app/2067260/Reflection/')"
+                type="button"
+                class="font-singa text-white bg-black bg-opacity-40 backdrop-blur-xl hover:text-white border border-black hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-3xl px-5 py-1.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800"
+              >
+                Buy Now
+              </button>
+            </div>
           </div>
         </div>
         <div id="character" class="w-full lg:w-1/2 m-auto place-items-center">

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="z-10 text-white top-0 sticky font-h1 py-0  bg-opacity-10 backdrop-blur-xl"
+    class="z-10 text-white top-0 sticky font-h1 py-0 -mt-6 bg-opacity-10 backdrop-blur-xl"
   >
     <nav
       class="sticky top-0 container px-6 mx-auto md:flex md:justify-between md:items-center"
@@ -17,8 +17,11 @@
               class="w-24 md:w-32"
             />
             <div class="m-auto">
-              <h2 class="tracking-widest">ZONEX</h2>
-              <h4 class="font-medium">Studios</h4>
+              <img
+              src="@/assets/images/logo_full.png"
+              alt="logo"
+              class="w-32 md:w-64"
+            />
             </div>
           </div>
         </router-link>

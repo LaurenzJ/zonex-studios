@@ -1,20 +1,5 @@
 <template>
   <div class="company bg-black text-white">
-    <div v-if="showModal" class="food__menu">
-          <a href="#" class="food__list" v-for="food in foods" :key="food">
-            <div class="food__image">
-              <img
-                :src="food.image"
-                :class="{fullWidthImage : fullWidthImage }"
-                @click="fullWidthImage = !fullWidthImage"
-              />
-            </div>
-            <div class="food__details">
-              <span class="food__name">{{food.name}}</span>
-              <span class="food__type">{{food.type}}</span>
-            </div>
-          </a>
-        </div>
     <div class="grid place-items-center space-y-16 px-6">
       <h1 v-motion-pop-right>Company</h1>
 
@@ -42,8 +27,6 @@
             aperiam optio reprehenderit voluptatum deserunt hic odio facere sed
             laudantium, quisquam iure.
           </p>
-
-          
         </div>
         <div class="lg:w-1/2 w-full m-auto">
           <div>
@@ -87,7 +70,7 @@
                         src="@/assets/images/company/Itower.jpeg"
                       />
                     </div>
-                    <div class=" w-full p-1 md:p-2">
+                    <div class="w-full p-1 md:p-2">
                       <img
                         @click="
                           showImage(
