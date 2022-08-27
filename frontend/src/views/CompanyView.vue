@@ -3,9 +3,9 @@
     <div class="grid place-items-center space-y-16 lg:px-6">
       <h1 v-motion-pop-right>Company</h1>
 
-      <div class="h-full w-full" v-if="showModal">
+      <div class="h-full w-100" v-if="showModal">
         <button @click="showModal = false">X</button>
-        <img v-bind:src="currentImage" alt="" />
+        <img class="w-100" v-bind:src="currentImage" alt="" />
       </div>
 
       <div v-if="!showModal" class="p-2 w-full h-full lg:flex text-white">

@@ -19,7 +19,7 @@
       >
         <h2 v-motion-pop-down class="text-3xl text-black">OPEN POSITIONS</h2>
 
-        <dl v-motion-roll-on-visible class="space-y-4">
+        <dl v-motion-roll-on-visible class="space-y-4 font-normal text-lg">
           <div>
             <dt><h3>Junior-Mid 3D Animator</h3></dt>
             <dd>

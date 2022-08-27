@@ -10,7 +10,7 @@ module.exports = {
     fontFamily: {
       'btn': ['Inter'],
       'h1': ['Inter'],
-      'sans': 'Hoefler Text',
+      'sans': 'Inter',
       'singa': 'SINGA'
     },
   },
