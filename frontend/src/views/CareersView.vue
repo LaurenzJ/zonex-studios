@@ -1,6 +1,6 @@
 <template>
   <div class="careers text-white w-full">
-    <div class="grid place-items-center space-y-16 px-6">
+    <div class="grid place-items-center space-y-16 lg:px-6 px-2">
       <h1 v-motion-pop-right>Careers</h1>
       <iframe
         v-motion-pop-right
@@ -15,7 +15,7 @@
       ></iframe>
 
       <div
-        class="rounded-xl bg-slate-300 lg:w-2/3 w-full text-left text-[#978C8C] text-xl py-20 px-16 space-y-6"
+        class="rounded-xl bg-slate-300 lg:w-2/3 w-full text-left text-[#978C8C] text-xl lg:py-20 py-6 lg:px-16 px-6 space-y-6"
       >
         <h2 v-motion-pop-down class="text-3xl text-black">OPEN POSITIONS</h2>
 

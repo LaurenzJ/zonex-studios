@@ -34,14 +34,17 @@ Vue.use(MotionPlugin, {
     },
     "pop-right-pc": {
       initial: {
-        scale: 0.9,
+        scale: 1,
         opacity: 1,
-        x: 0,
+        x: -50,
+      },
+      enter: {
+        x: 0
       },
       tapped: {
-        scale: 0.9,
-        opacity: .9,
-        x: -100,
+        scale: 1,
+        opacity: 1,
+        x: -200,
         
       },
     },

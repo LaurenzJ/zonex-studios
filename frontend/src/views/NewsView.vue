@@ -1,6 +1,6 @@
 <template>
   <div class="news text-white bg-black">
-    <div class="grid place-items-center px-6">
+    <div class="grid place-items-center lg:px-6">
       <h1 v-motion-pop-right class="pb-16">News</h1>
       <div v-if="showModal">
         <button @click="showModal = false">X</button>

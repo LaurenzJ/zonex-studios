@@ -1,6 +1,6 @@
 <template>
   <div class="company bg-black text-white">
-    <div class="grid place-items-center space-y-16 px-6">
+    <div class="grid place-items-center space-y-16 lg:px-6">
       <h1 v-motion-pop-right>Company</h1>
 
       <div class="h-full w-full" v-if="showModal">
@@ -9,7 +9,7 @@
       </div>
 
       <div v-if="!showModal" class="p-2 w-full h-full lg:flex text-white">
-        <div class="lg:w-1/3 w-full m-auto space-y-6 text-justify">
+        <div class="lg:w-1/3 w-full m-auto space-y-6 px-2 text-justify">
           <div class="space-y-6">
             <p v-motion-pop-up>
               Incorporated in March, 2021, Zonex Studio is one of computer game

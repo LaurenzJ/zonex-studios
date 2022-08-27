@@ -3,6 +3,7 @@
     class="z-10 text-white top-0 sticky font-h1 py-0 -mt-6 bg-opacity-10 backdrop-blur-xl"
   >
     <nav
+      v-motion-pop-down
       class="sticky top-0 container px-6 mx-auto md:flex md:justify-between md:items-center grid  m-auto"
     >
       <div class="flex items-center justify-between">
@@ -62,7 +63,7 @@
         <router-link to="/contact" class="nav-link">
           <li v-on:click="showMenu = false">Contact</li>
         </router-link>
-        <router-link to="/community" class="nav-link">
+        <router-link to="/community" class="nav-link pb-8 lg:pb-0">
           <li v-on:click="showMenu = false">Community</li>
         </router-link>
       </ul>
